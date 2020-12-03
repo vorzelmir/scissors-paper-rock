@@ -1,0 +1,74 @@
+@import "normalize.scss";
+body {
+    font-size: 20px;
+}
+
+.wrapper {
+    margin: 10px auto;
+    width: 90%;
+    padding: 10px;
+
+    &.rule {
+        margin: 10px auto;
+        width: 50%;
+        text-align: center;
+
+        .rules {
+            list-style: none;
+        }
+    }
+}
+
+
+.game-bts {
+    display: flex;
+    justify-content: space-around;
+
+    .scissors {
+        padding: 45px;
+        background: url("../img/scissors.png") no-repeat center;
+        background-size: cover;
+        border: none;
+    }
+
+    .paper {
+        padding: 45px;
+        background: url("../img/paper.png") no-repeat center;
+        background-size: cover;
+        border: none;
+    }
+
+    .rock {
+        padding: 45px;
+        background: url("../img/rock.png") no-repeat center;
+        background-size: cover;
+        border: none;
+    }
+
+}
+        .round {
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+.endgame .wrapper {
+    margin: 10px auto;
+    width: 25%;
+    text-align: center;
+
+    .result {
+        text-align: center;
+    }
+    .btn-reset {
+        padding: 25px;
+    }
+}
+
+.game {
+    display: none;
+}
+
+.endgame {
+    display: none;
+}
