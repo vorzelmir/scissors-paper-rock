@@ -1,6 +1,4 @@
-const { doc } = require("prettier");
-
-btnStart.addEventListener('click',  (event) => {
+btnStart.addEventListener('click', (event) => {
     event.preventDefault();
 
     document.querySelector('.start').style.display = 'none';
@@ -8,9 +6,9 @@ btnStart.addEventListener('click',  (event) => {
     document.querySelector('.endgame').style.display = 'block';
 })
 
- 
+
 const random = (min, max) => {
-    return Math.floor(Math.random()*(max-min)+min);
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
 const winner = () => {
@@ -103,5 +101,3 @@ newGame.addEventListener('click', (event) => {
     gameOver.textContent = 'final';
 
 })
-
-
